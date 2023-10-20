@@ -8,7 +8,7 @@
 
  - 基础版插件：仅一个ShadowSockR Plus+
 
- - 合集版插件：PassWall，ShadowSockR Plus+，Openclash，istore（应用商店）
+ - 合集版插件：PassWall，ShadowSockR Plus+，OpenClash，istore（应用商店）
 
 | 默认地址  | 默认账号 | 默认密码 |
 | ---- | ---- | ---- |
