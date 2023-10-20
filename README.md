@@ -14,7 +14,10 @@
 
 ### 固件下载:   [Releases](https://github.com/Bigdog-007/OpenWrt-Mini/releases) 
 
-### 固件截图（基础版+合集版）详细插件列表看下图
+### 基础版包含插件：SSR
+### 合集版包含插件：PassWall+SSR+Openclash+istore应用商店
+
+### 固件截图
 
 ![avatar](https://github.com/Bigdog-007/OpenWrt-Mini/blob/main/op1.jpg)
 ![avatar](https://github.com/Bigdog-007/OpenWrt-Mini/blob/main/op2.jpg)
