@@ -23,8 +23,25 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Initialization environment
+
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+      with:
+        tool-cache: true
+        
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        swap-storage: true
+
+    - name: Checkout
       uses: actions/checkout@main
+
+    - name: Disk space
+      run: |
+           echo "Free space:"
+           df -h
 
     - name: Initialization environment
       env:
@@ -57,9 +74,6 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
-
-    - name: re Install feeds 
       run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
@@ -131,7 +145,7 @@ jobs:
         echo "OpenWrt5.15-X86-64-基础版（支持ipv6）" >> release.txt
         echo "默认地址：192.168.2.251" >> release.txt
         echo "默认密码：无密码" >> release.txt
-        echo "包含插件：ShadowSockR Plus+" >> release.txt
+        echo "包含插件：ShadowSocksR Plus+" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
